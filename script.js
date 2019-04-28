@@ -1,0 +1,12 @@
+var money = prompt("Ваш бюджет на месяц?", "");
+var time = prompt("Введите дату в формате YYYY-MM-DD", "");
+var appData = new Object();
+appData.budget = money;
+appData.timeData = time;
+var oblSpend = prompt("Введите обязательную статью расходов в этом месяце", "");
+var howMuch = prompt("Во сколько обойдется?", "");
+appData.expenses.oblSpend = howMuch;
+appData.optionalExpenses = {};
+appData.income = [];
+appData.savings = false;
+alert(appData.budget / 30);
